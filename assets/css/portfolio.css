@@ -63,3 +63,12 @@ h1, h2, h3, h4, h5, h6, p {
     font-family: 'Poppins';
     font-style: normal;
 }
+
+.seperator {
+    margin: 10px;
+}
+
+.icons {
+    width: 45px;
+    height: auto;
+}
