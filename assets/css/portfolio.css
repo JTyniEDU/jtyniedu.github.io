@@ -5,11 +5,12 @@ body {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    background: radial-gradient(#003800, black);
+    background: linear-gradient(180deg, #1F232C 50%, #00ECFD);
     background-attachment: fixed;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     font-family: "Poppins", sans-serif;
     color: antiquewhite;
     min-height: 100vh;
