@@ -1,6 +1,8 @@
 body {
-    background: linear-gradient(
-        90deg,
-        rgba(2, 0, 36, 1) 0%,
-        rgba(9, 9, 121, 1) 35%,);
+    min-height: 100vh;
+    min-width: 100vw;
+    background: linear-gradient(180deg, black, #1F232C);
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
 }
