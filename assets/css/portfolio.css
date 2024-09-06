@@ -22,3 +22,14 @@ body {
     border-radius: 25px;
     box-shadow: 0 0 15px 2px black;
 }
+
+.logo {
+    width: 25%;
+    height: auto;
+}
+
+.header {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+}
