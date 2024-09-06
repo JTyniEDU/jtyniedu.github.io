@@ -65,11 +65,17 @@ h1, h2, h3, h4, h5, h6, p {
     font-style: normal;
 }
 
+.social {
+    display: flex;
+    align-items: center;
+}
+
 .seperator {
     margin: 10px;
+    height: 10px;
 }
 
 .icons {
-    width: 45px;
+    width: 30px;
     height: auto;
 }
