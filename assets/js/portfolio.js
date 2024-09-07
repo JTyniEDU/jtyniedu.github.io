@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     // Replace with the actual ID of the image element in your HTML.
-    const gif = document.getElementById("yourImageId"); // Make sure you have the correct ID
+    const gif = document.getElementById("chi"); // Make sure you have the correct ID
     if (!gif) {
         console.error("Image not found!");
         return;
