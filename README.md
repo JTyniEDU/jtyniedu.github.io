@@ -1,1 +1,0 @@
-# jtyniedu.github.io
