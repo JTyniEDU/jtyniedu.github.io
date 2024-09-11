@@ -504,3 +504,12 @@ body {
     border-radius: 50px;
 }
 
+/* Widths */
+
+.j2o-w-50 {
+    width: 50%;
+}
+
+.j2o-w-100 .j2o-w-full {
+    width: 100%
+}
