@@ -47,6 +47,12 @@ body {
     border: 1px #0f0 solid;
 }
 
+#inputbutton {
+    background: black;
+    color: #0f0;
+    font-family: monospace;
+}
+
 /* J2o's CSS Pack v1.1 by Joona Tyni */
 
 /* Colors */
