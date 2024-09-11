@@ -29,6 +29,21 @@ body {
 #terminal {
     width: 80%;
     min-height: 100px;
+    position: relative;   
+    border: 1px #0f0 solid;
+}
+
+#input {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#inputfield {
+    background: black;
+    color: #0f0;
+    border: 1px #0f0 solid;
 }
 
 /* J2o's CSS Pack v1.1 by Joona Tyni */
