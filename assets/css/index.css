@@ -45,6 +45,7 @@ body {
     background: black;
     color: #0f0;
     border: 1px #0f0 solid;
+    font-family: monospace;
 }
 
 #inputbutton {
