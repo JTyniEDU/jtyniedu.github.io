@@ -48,6 +48,10 @@ body {
     font-family: monospace;
 }
 
+#inputfield:focus {
+    border: none;
+}
+
 #inputbutton {
     background: black;
     color: #0f0;
