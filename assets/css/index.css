@@ -1,6 +1,7 @@
 html {
     background-color: #070f16;
 }
---bulma-navbar-background-color {
-    background: #070f16;
-}
+:root {
+    --bulma-body-background-color: #070f16;
+    --bulma-body-color: white;
+  }
