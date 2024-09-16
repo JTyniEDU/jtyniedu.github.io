@@ -1,3 +1,6 @@
 html {
     background-color: #070f16;
 }
+--bulma-navbar-background-color {
+    background: #070f16;
+}
