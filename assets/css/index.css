@@ -34,8 +34,10 @@ body {
 }
 
 #input {
-    position: absolute;
-    bottom: 0;
+    background: none;
+    border: solid 1px #00FF00;
+    color: #00FF00;
+    font-family: monospace;
     display: flex;
     flex-direction: column;
     width: 100%;
