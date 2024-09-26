@@ -49,9 +49,6 @@ $(document).ready(function(){
     $(".link-about").click(function(){
         $("p").hide(1000);
       });
-    $("h4").click(function(){
-      $(this).hide();
-    });
   });
 
 
