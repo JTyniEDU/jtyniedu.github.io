@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 $(document).ready(function(){
     $(".link-about").click(function(){
-        $("p").fadeIn(1000);
+        $(".content-home").fadeIn(1000);
       });
   });
 
