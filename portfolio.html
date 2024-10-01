@@ -1,26 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Portfolio-sivu</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Page</title>
     <link rel="stylesheet" href="assets/css/portfolio.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <div class="card" style="z-index: 3;">
+    <div class="card">
         <div class="header">
-                <img class="logo" src="assets/img/logo.webp">
-                
+            <img class="logo" src="assets/img/logo.webp" alt="Logo">
             <div class="menu">
-                <h4 class="link link-current">Home</h3>
-                <h4 class="link">About</h3>
-                <h4 class="link">Skills</h3>
-                <h4 class="link">Portfolio</h3>
-                <h4 class="link">Contact</h3>
+                <h4 class="link link-current">Home</h4>
+                <h4 class="link">About</h4>
+                <h4 class="link">Skills</h4>
+                <h4 class="link">Portfolio</h4>
+                <h4 class="link">Contact</h4>
             </div>
         </div>
         <div class="content">
@@ -30,30 +28,31 @@
             <p>I have a passion for creating beautiful and functional websites with a 5-year background in full stack development.</p>
             <hr class="seperator">
             <div class="social">
-            <h3 class="present">My Socials</h3>
-            <img src="assets/svg/github.svg" class="icons"/>
-            <img src="assets/svg/linkedin.svg" class="icons"/>
-            <hr class="seperator">
-            <h3 class="present">My Skills</h3>
-            <div class="icons-container">
-            <img src="assets/svg/html5.svg" class="icons" data-progress="90"/>
-            <img src="assets/svg/css3.svg" class="icons" data-progress="90"/>
-            <img src="assets/svg/javascript.svg" class="icons" data-progress="70"/>
-            <img src="assets/svg/bootstrap.svg" class="icons" data-progress="50"/>
-            <img src="assets/svg/nodejs.svg" class="icons" data-progress="70"/>
-            <img src="assets/svg/php.svg" class="icons" data-progress="70"/>
-            <img src="assets/svg/react.svg" class="icons" data-progress="50"/>
-            <img src="assets/svg/mysql.svg" class="icons" data-progress="60"/>
-            </div>
-            <div class="progress-bar-container">
-                <progress id="progress-bar" value="0" max="100"></progress>
-            </div>
+                <h3 class="present">My Socials</h3>
+                <img src="assets/svg/github.svg" class="icons" alt="GitHub">
+                <img src="assets/svg/linkedin.svg" class="icons" alt="LinkedIn">
+                <hr class="seperator">
+                <h3 class="present">My Skills</h3>
+                <div class="icons-container">
+                    <img src="assets/svg/html5.svg" class="icons" data-progress="90" alt="HTML">
+                    <img src="assets/svg/css3.svg" class="icons" data-progress="90" alt="CSS">
+                    <img src="assets/svg/javascript.svg" class="icons" data-progress="70" alt="JavaScript">
+                    <img src="assets/svg/bootstrap.svg" class="icons" data-progress="50" alt="Bootstrap">
+                    <img src="assets/svg/nodejs.svg" class="icons" data-progress="70" alt="Node.js">
+                    <img src="assets/svg/php.svg" class="icons" data-progress="70" alt="PHP">
+                    <img src="assets/svg/react.svg" class="icons" data-progress="50" alt="React">
+                    <img src="assets/svg/mysql.svg" class="icons" data-progress="60" alt="MySQL">
+                </div>
+                <div class="progress-bar-container">
+                    <progress id="progress-bar" value="0" max="100"></progress>
+                </div>
             </div>
             <br>
             <button class="btn">Download CV</button>
         </div>
     </div>
-    <img src="/favicon.ico" id="chi" display="absolute">
+    <img src="/favicon.ico" id="chi" style="position: absolute;">
     <script src="assets/js/portfolio.js"></script>
 </body>
+
 </html>

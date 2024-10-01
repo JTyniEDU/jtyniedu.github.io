@@ -1,28 +1,18 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const gif = document.getElementById("chi"); 
-    if (!gif) {
-        console.error("Image not found!");
-        return;
-    }
-
-    // const bounceSound = new Audio('path_to_sound_file.mp3');
+    const gif = document.getElementById("chi");
 
     let xGif = 100;
     let yGif = 100;
-    let dxGif = 0.6; // h-speed
-    let dyGif = 0.6; // v-speed
+    let dxGif = 0.6;
+    let dyGif = 0.6;
 
     function moveImage(image, x, y, dx, dy) {
         const rect = image.getBoundingClientRect();
         const vw = window.innerWidth;
         const vh = window.innerHeight;
 
-        if (rect.right >= vw || rect.left <= 0) {
-            dx = -dx;
-        }
-        if (rect.bottom >= vh || rect.top <= 0) {
-            dy = -dy;
-        }
+        if (rect.right >= vw || rect.left <= 0) dx = -dx;
+        if (rect.bottom >= vh || rect.top <= 0) dy = -dy;
 
         x += dx;
         y += dy;
@@ -41,31 +31,20 @@ document.addEventListener("DOMContentLoaded", () => {
     gif.style.position = "absolute";
     gif.style.left = xGif + "px";
     gif.style.top = yGif + "px";
-    
     animate();
 });
 
-$(document).ready(function(){
-    $(".link-about").click(function(){
-        $(".content-home").fadeIn(1000);
-      });
-  });
-
-// Get all the icons and the progress bar element
+// Hover effect for progress bar
 const icons = document.querySelectorAll('.icons');
 const progressBar = document.getElementById('progress-bar');
 
-// Add event listeners to each icon for the hover effect
 icons.forEach(icon => {
-    icon.addEventListener('mouseover', function() {
-        // Get the progress value from the data attribute
+    icon.addEventListener('mouseover', function () {
         const progressValue = this.getAttribute('data-progress');
-        // Set the progress bar's value to the hovered icon's value
         progressBar.value = progressValue;
     });
 
-    icon.addEventListener('mouseout', function() {
-        // Reset the progress bar when the mouse leaves the icon
+    icon.addEventListener('mouseout', function () {
         progressBar.value = 0;
     });
 });
