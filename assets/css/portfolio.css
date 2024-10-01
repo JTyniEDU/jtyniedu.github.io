@@ -77,6 +77,11 @@ h1, h2, h3, h4, h5, h6, p {
 .icons {
     width: 30px;
     height: auto;
+    transition: 0.3ms;
+}
+
+.icons:hover {
+    scale: 1.25;
 }
 
 .link {
