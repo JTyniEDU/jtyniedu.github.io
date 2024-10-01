@@ -51,4 +51,21 @@ $(document).ready(function(){
       });
   });
 
+// Get all the icons and the progress bar element
+const icons = document.querySelectorAll('.icon');
+const progressBar = document.getElementById('progress-bar');
 
+// Add event listeners to each icon for the hover effect
+icons.forEach(icon => {
+    icon.addEventListener('mouseover', function() {
+        // Get the progress value from the data attribute
+        const progressValue = this.getAttribute('data-progress');
+        // Set the progress bar's value to the hovered icon's value
+        progressBar.value = progressValue;
+    });
+
+    icon.addEventListener('mouseout', function() {
+        // Reset the progress bar when the mouse leaves the icon
+        progressBar.value = 0;
+    });
+});
