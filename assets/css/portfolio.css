@@ -1,53 +1,118 @@
-body {
-    background: linear-gradient(180deg, #1F232C 50%, #00ECFD);
+/* General Styles */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
     font-family: "Poppins", sans-serif;
     color: white;
+    background: linear-gradient(180deg, #1F232C 50%, #00ECFD);
+    background-attachment: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0;
-    height: 100vh;
 }
 
+/* Card Container */
 .card {
     background: #20242D;
     padding: 25px;
     border-radius: 25px;
-    width: 80%;
     box-shadow: 0 0 15px 2px black;
+    width: 80%;
+    max-width: 900px;
+}
+
+/* Header Section */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
 }
 
 .logo {
     width: 25%;
     height: auto;
-    margin-right: 25%;
-}
-
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .menu {
     display: flex;
-    gap: 20px;
+    justify-content: space-around;
+    width: 100%;
 }
 
+.link {
+    font-weight: 500;
+    font-size: 18px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.link:hover {
+    color: #01E9FA;
+}
+
+/* Content Section */
 .content {
-    margin: 0 40px 30px 40px;
+    text-align: center;
+    margin: 0 40px;
 }
 
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+/* Main Heading Styles */
+h1 {
+    font-size: 50px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+/* Paragraph and Separator */
+p {
+    margin: 15px 0;
+    font-size: 18px;
+}
+
+.seperator {
+    width: 50px;
+    margin: 15px auto;
+    border-bottom: 2px solid #01E9FA;
+}
+
+/* Social Media Section */
+.social h3 {
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.icons-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+/* Icons Styles */
 .icons {
-    width: 30px;
+    width: 40px;
     height: auto;
-    transition: transform 0.3s ease;
+    cursor: pointer;
+    transition: transform 0.3s ease, rotate 0.3s ease;
 }
 
 .icons:hover {
     transform: scale(1.25) rotate(10deg);
 }
 
+/* Progress Bar Styles */
 .progress-bar-container {
     width: 300px;
     margin: 0 auto;
@@ -57,11 +122,10 @@ progress {
     width: 100%;
     height: 30px;
     appearance: none;
-    border-radius: 10px;
 }
 
 progress::-webkit-progress-bar {
-    background-color: #f3f3f3;
+    background-color: #333;
     border-radius: 10px;
 }
 
@@ -70,25 +134,64 @@ progress::-webkit-progress-value {
     border-radius: 10px;
 }
 
-.icons-container {
-    display: flex;
-    gap: 10px;
+/* Button */
+.btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #01E9FA;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 0 8px #01E9FA;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
+.btn:hover {
+    background-color: #00ECFD;
+    box-shadow: 0 0 15px #00ECFD;
+}
+
+/* Responsive Design */
 @media only screen and (max-width: 800px) {
     .header {
         flex-direction: column;
+        align-items: center;
     }
 
     .logo {
-        margin-right: 0;
         width: 50%;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .link {
+        margin-bottom: 10px;
     }
 }
 
 @media only screen and (max-width: 400px) {
-    .menu {
-        flex-direction: column;
-        text-align: center;
+    .content {
+        margin-left: 20px;
+        margin-right: 20px;
     }
+
+    .icons {
+        width: 30px;
+    }
+
+    .btn {
+        width: 150px;
+    }
+}
+
+/* Floating Image (chi) Styles */
+#chi {
+    width: 100px;
+    height: 100px;
+    position: absolute;
 }
