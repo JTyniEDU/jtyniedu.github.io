@@ -9,8 +9,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let xGif = 100;
     let yGif = 100;
-    let dxGif = 1-4; // h-speed
-    let dyGif = 1.4; // v-speed
+    let dxGif = 0.6; // h-speed
+    let dyGif = 0.6; // v-speed
 
     function moveImage(image, x, y, dx, dy) {
         const rect = image.getBoundingClientRect();
