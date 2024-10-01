@@ -52,7 +52,7 @@ $(document).ready(function(){
   });
 
 // Get all the icons and the progress bar element
-const icons = document.querySelectorAll('.icon');
+const icons = document.querySelectorAll('.icons');
 const progressBar = document.getElementById('progress-bar');
 
 // Add event listeners to each icon for the hover effect
