@@ -79,6 +79,14 @@ h1, h2, h3, h4, h5, h6, p {
     height: auto;
 }
 
+.link {
+    transition: 0.3s;
+}
+
+.link:hover {
+    color: #01E9FA;
+}
+
 .seperator {
     width: 25px;
 }
