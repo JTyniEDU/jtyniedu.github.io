@@ -48,22 +48,30 @@ icons.forEach(icon => {
     });
 });
 
-function dataHome () {
+function dataHome() {
     document.getElementById("data-1").style.display = "unset";
-    document.getElementById("data-2", "data-3", "data-4").setAttribute('style', 'display:none !important');
+    document.getElementById("data-2").style.display = "none";
+    document.getElementById("data-3").style.display = "none";
+    document.getElementById("data-4").style.display = "none";
 }
 
-function dataAbout () {
+function dataAbout() {
     document.getElementById("data-2").style.display = "unset";
-    document.getElementById("data-1", "data-3", "data-4").setAttribute('style', 'display:none !important');
+    document.getElementById("data-1").style.display = "none";
+    document.getElementById("data-3").style.display = "none";
+    document.getElementById("data-4").style.display = "none";
 }
 
-function dataSkills () {
+function dataSkills() {
     document.getElementById("data-3").style.display = "unset";
-    document.getElementById("data-1", "data-2", "data-4").setAttribute('style', 'display:none !important');
+    document.getElementById("data-1").style.display = "none";
+    document.getElementById("data-2").style.display = "none";
+    document.getElementById("data-4").style.display = "none";
 }
 
-function dataContact () {
+function dataContact() {
     document.getElementById("data-4").style.display = "unset";
-    document.getElementById("data-1", "data-2", "data-3").setAttribute('style', 'display:none !important');
+    document.getElementById("data-1").style.display = "none";
+    document.getElementById("data-2").style.display = "none";
+    document.getElementById("data-3").style.display = "none";
 }
