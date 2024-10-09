@@ -198,3 +198,13 @@ form {
     flex-direction: column;
     align-items: flex-start;
 }
+
+.wrapper-1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.wrapper-2 {
+    display: flex;
+    flex-direction: column;
+}
