@@ -212,3 +212,12 @@ form {
     display: flex;
     flex-direction: column;
 }
+
+.centered {
+    display: flex;
+    align-items: center;
+}
+
+.infotxt {
+    margin-left: 5px;
+}
