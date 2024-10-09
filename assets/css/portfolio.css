@@ -78,6 +78,7 @@ h1, h2, h3, h4, h5, h6, p {
     width: 30px;
     height: auto;
     transition: 0.3s;
+    margin-right: 5px;
 }
 
 .icons:hover {
