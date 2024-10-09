@@ -139,3 +139,18 @@ progress::-webkit-progress-value {
         width: 100px;
     }
   }
+
+#data-2 {
+    display: none;
+    transition: 0.5s;
+}
+
+#data-3 {
+    display: none;
+    transition: 0.5s;
+}
+
+#data-4 {
+    display: none;
+    transition: 0.5s;
+}

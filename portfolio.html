@@ -11,16 +11,142 @@
     <link rel="stylesheet" href="assets/css/portfolio.css">
 </head>
 <body>
-    <div class="card" style="z-index: 3;">
+    <!-- Home -->
+    <div id="data-1" class="card" style="z-index: 3;">
         <div class="header">
                 <img class="logo" src="assets/img/logo.webp">
                 
             <div class="menu">
-                <h4 class="link link-current">Home</h3>
-                <h4 class="link">About</h3>
-                <h4 class="link">Skills</h3>
-                <h4 class="link">Portfolio</h3>
-                <h4 class="link">Contact</h3>
+                <h4 class="link link-current" onclick="dataHome()">Home</h3>
+                <h4 class="link" onclick="dataAbout()">About</h3>
+                <h4 class="link" onclick="dataSkills()">Skills</h3>
+                <h4 class="link" onclick="dataContact()">Contact</h3>
+            </div>
+        </div>
+        <div class="content">
+            <h2>Hello, It's Me</h2>
+            <h1>Joona Tyni</h1>
+            <h2>And I'm a Full Stack Developer</h2>
+            <p>I have a passion for creating beautiful and functional websites with a 5-year background in full stack development.</p>
+            <hr class="seperator">
+            <div class="social">
+            <h3 class="present">My Socials</h3>
+            <img src="assets/svg/github.svg" class="icons"/>
+            <img src="assets/svg/linkedin.svg" class="icons"/>
+            <hr class="seperator">
+            <h3 class="present">My Skills</h3>
+            <div class="icons-container">
+            <img src="assets/svg/html5.svg" class="icons" data-progress="90"/>
+            <img src="assets/svg/css3.svg" class="icons" data-progress="90"/>
+            <img src="assets/svg/javascript.svg" class="icons" data-progress="70"/>
+            <img src="assets/svg/bootstrap.svg" class="icons" data-progress="50"/>
+            <img src="assets/svg/nodejs.svg" class="icons" data-progress="70"/>
+            <img src="assets/svg/php.svg" class="icons" data-progress="70"/>
+            <img src="assets/svg/react.svg" class="icons" data-progress="50"/>
+            <img src="assets/svg/mysql.svg" class="icons" data-progress="60"/>
+            </div>
+            <!-- <div class="progress-bar-container">
+                <progress id="progress-bar" value="0" max="100"></progress>
+            </div> -->
+            </div>
+            <br>
+            <button class="btn">Download CV</button>
+        </div>
+    </div>
+    <!-- About -->
+    <div id="data-2" class="card" style="z-index: 3;">
+        <div class="header">
+                <img class="logo" src="assets/img/logo.webp">
+                
+            <div class="menu">
+                <h4 class="link" onclick="dataHome()">Home</h3>
+                <h4 class="link link-current" onclick="dataAbout()">About</h3>
+                <h4 class="link" onclick="dataSkills()">Skills</h3>
+                <h4 class="link" onclick="dataContact()">Contact</h3>
+            </div>
+        </div>
+        <div class="content">
+            <h2>Hello, It's Me</h2>
+            <h1>Joona Tyni</h1>
+            <h2>And I'm a Full Stack Developer</h2>
+            <p>I have a passion for creating beautiful and functional websites with a 5-year background in full stack development.</p>
+            <hr class="seperator">
+            <div class="social">
+            <h3 class="present">My Socials</h3>
+            <img src="assets/svg/github.svg" class="icons"/>
+            <img src="assets/svg/linkedin.svg" class="icons"/>
+            <hr class="seperator">
+            <h3 class="present">My Skills</h3>
+            <div class="icons-container">
+            <img src="assets/svg/html5.svg" class="icons" data-progress="90"/>
+            <img src="assets/svg/css3.svg" class="icons" data-progress="90"/>
+            <img src="assets/svg/javascript.svg" class="icons" data-progress="70"/>
+            <img src="assets/svg/bootstrap.svg" class="icons" data-progress="50"/>
+            <img src="assets/svg/nodejs.svg" class="icons" data-progress="70"/>
+            <img src="assets/svg/php.svg" class="icons" data-progress="70"/>
+            <img src="assets/svg/react.svg" class="icons" data-progress="50"/>
+            <img src="assets/svg/mysql.svg" class="icons" data-progress="60"/>
+            </div>
+            <!-- <div class="progress-bar-container">
+                <progress id="progress-bar" value="0" max="100"></progress>
+            </div> -->
+            </div>
+            <br>
+            <button class="btn">Download CV</button>
+        </div>
+    </div>
+    <!-- Skills -->
+    <div id="data-3" class="card" style="z-index: 3;">
+        <div class="header">
+                <img class="logo" src="assets/img/logo.webp">
+                
+            <div class="menu">
+                <h4 class="link" onclick="dataHome()">Home</h3>
+                <h4 class="link" onclick="dataAbout()">About</h3>
+                <h4 class="link link-current" onclick="dataSkills()">Skills</h3>
+                <h4 class="link" onclick="dataContact()">Contact</h3>
+            </div>
+        </div>
+        <div class="content">
+            <h2>Hello, It's Me</h2>
+            <h1>Joona Tyni</h1>
+            <h2>And I'm a Full Stack Developer</h2>
+            <p>I have a passion for creating beautiful and functional websites with a 5-year background in full stack development.</p>
+            <hr class="seperator">
+            <div class="social">
+            <h3 class="present">My Socials</h3>
+            <img src="assets/svg/github.svg" class="icons"/>
+            <img src="assets/svg/linkedin.svg" class="icons"/>
+            <hr class="seperator">
+            <h3 class="present">My Skills</h3>
+            <div class="icons-container">
+            <img src="assets/svg/html5.svg" class="icons" data-progress="90"/>
+            <img src="assets/svg/css3.svg" class="icons" data-progress="90"/>
+            <img src="assets/svg/javascript.svg" class="icons" data-progress="70"/>
+            <img src="assets/svg/bootstrap.svg" class="icons" data-progress="50"/>
+            <img src="assets/svg/nodejs.svg" class="icons" data-progress="70"/>
+            <img src="assets/svg/php.svg" class="icons" data-progress="70"/>
+            <img src="assets/svg/react.svg" class="icons" data-progress="50"/>
+            <img src="assets/svg/mysql.svg" class="icons" data-progress="60"/>
+            </div>
+            <!-- <div class="progress-bar-container">
+                <progress id="progress-bar" value="0" max="100"></progress>
+            </div> -->
+            </div>
+            <br>
+            <button class="btn">Download CV</button>
+        </div>
+    </div>
+    <!-- Contact -->
+    <div id="data-4" class="card" style="z-index: 3;">
+        <div class="header">
+                <img class="logo" src="assets/img/logo.webp">
+                
+            <div class="menu">
+                <h4 class="link" onclick="dataHome()">Home</h3>
+                <h4 class="link" onclick="dataAbout()">About</h3>
+                <h4 class="link" onclick="dataSkills()">Skills</h3>
+                <h4 class="link link-current" onclick="dataContact()">Contact</h3>
             </div>
         </div>
         <div class="content">

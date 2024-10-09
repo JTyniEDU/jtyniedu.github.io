@@ -34,7 +34,6 @@ document.addEventListener("DOMContentLoaded", () => {
     animate();
 });
 
-// Hover effect for progress bar
 const icons = document.querySelectorAll('.icons');
 const progressBar = document.getElementById('progress-bar');
 
@@ -48,3 +47,23 @@ icons.forEach(icon => {
         progressBar.value = 0;
     });
 });
+
+function dataHome () {
+    document.getElementById("data-1").style.display = "inherit";
+    document.getElementById("data-2", "data-3", "data-4").style.display = "none";
+}
+
+function dataAbout () {
+    document.getElementById("data-2").style.display = "inherit";
+    document.getElementById("data-1", "data-3", "data-4").style.display = "none";
+}
+
+function dataSkills () {
+    document.getElementById("data-3").style.display = "inherit";
+    document.getElementById("data-1", "data-2", "data-4").style.display = "none";
+}
+
+function dataContact () {
+    document.getElementById("data-4").style.display = "inherit";
+    document.getElementById("data-1", "data-2", "data-3").style.display = "none";
+}
