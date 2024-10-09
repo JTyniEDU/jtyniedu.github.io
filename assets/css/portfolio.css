@@ -169,3 +169,14 @@ input {
     border: none;
     background: #01E9FA;
     }
+
+#submitbtn {
+    width: 120px;
+    height: 40px;
+    background: #01E9FA;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 0 8px 0px #01E9FA;
+    font-family: 'Poppins';
+    font-style: normal;
+}
