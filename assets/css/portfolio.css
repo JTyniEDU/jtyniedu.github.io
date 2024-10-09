@@ -171,8 +171,8 @@ input, textarea {
     background: #01E9FA;
 }
 
-input:active, textarea:active {
-    border: none;
+textarea:focus, input:focus{
+    outline: none;
 }
 
 #submitbtn {
