@@ -158,3 +158,8 @@ progress::-webkit-progress-value {
     display: none;
     transition: 0.5s;
 }
+
+.link-current {
+    border-bottom: 3px solid;
+    padding-bottom: 3px; 
+}
