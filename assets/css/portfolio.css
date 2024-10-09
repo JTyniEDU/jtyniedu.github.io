@@ -195,7 +195,10 @@ textarea {
 
 form {
     background: #2b3650;
-    padding: 15px;
+    padding-top: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
