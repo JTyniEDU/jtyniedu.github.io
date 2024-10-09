@@ -99,13 +99,12 @@ h1, h2, h3, h4, h5, h6, p {
 
 .progress-bar-container {
     width: 300px;
-    margin: 0 auto;
 }
 
 progress {
     width: 100%;
     height: 30px;
-    appearance: none;
+    color: #01E9FA;
 }
 
 progress::-webkit-progress-bar {
