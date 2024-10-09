@@ -163,3 +163,9 @@ progress::-webkit-progress-value {
     border-bottom: 3px solid;
     padding-bottom: 3px; 
 }
+
+input {
+    border-radius: 25px;
+    border: none;
+    background: #01E9FA;
+    }
