@@ -165,7 +165,7 @@ progress::-webkit-progress-value {
 }
 
 input, textarea {
-    border-radius: 25px;
+    border-radius: 10px;
     border: none;
     background: #01E9FA;
 }
