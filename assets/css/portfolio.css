@@ -140,17 +140,15 @@ progress::-webkit-progress-value {
     }
   }
 
-#data-2 {
-    display: none;
-    transition: 0.5s;
+  #data-1, #data-2, #data-3, #data-4 {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s linear, visibility 0s linear 0.5s; /* Delay visibility change until the fade out is complete */
 }
 
-#data-3 {
-    display: none;
-    transition: 0.5s;
+#data-1.active, #data-2.active, #data-3.active, #data-4.active {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s linear; /* No delay for when it fades in */
 }
 
-#data-4 {
-    display: none;
-    transition: 0.5s;
-}

@@ -48,30 +48,34 @@ icons.forEach(icon => {
     });
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+    // Set data-1 as active on page load
+    document.getElementById("data-1").classList.add("active");
+});
+
+function hideAllData() {
+    const dataElements = document.querySelectorAll('#data-1, #data-2, #data-3, #data-4');
+    dataElements.forEach(element => {
+        element.classList.remove('active');
+    });
+}
+
 function dataHome() {
-    document.getElementById("data-1").style.display = "unset";
-    document.getElementById("data-2").style.display = "none";
-    document.getElementById("data-3").style.display = "none";
-    document.getElementById("data-4").style.display = "none";
+    hideAllData();
+    document.getElementById("data-1").classList.add("active");
 }
 
 function dataAbout() {
-    document.getElementById("data-2").style.display = "unset";
-    document.getElementById("data-1").style.display = "none";
-    document.getElementById("data-3").style.display = "none";
-    document.getElementById("data-4").style.display = "none";
+    hideAllData();
+    document.getElementById("data-2").classList.add("active");
 }
 
 function dataSkills() {
-    document.getElementById("data-3").style.display = "unset";
-    document.getElementById("data-1").style.display = "none";
-    document.getElementById("data-2").style.display = "none";
-    document.getElementById("data-4").style.display = "none";
+    hideAllData();
+    document.getElementById("data-3").classList.add("active");
 }
 
 function dataContact() {
-    document.getElementById("data-4").style.display = "unset";
-    document.getElementById("data-1").style.display = "none";
-    document.getElementById("data-2").style.display = "none";
-    document.getElementById("data-3").style.display = "none";
+    hideAllData();
+    document.getElementById("data-4").classList.add("active");
 }
