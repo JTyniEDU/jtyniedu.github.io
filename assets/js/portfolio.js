@@ -75,3 +75,27 @@ function dataContact() {
     document.getElementById("data-2").style.display = "none";
     document.getElementById("data-3").style.display = "none";
 }
+
+function validate() {
+    let fnval = document.forms["contactform"]["fn"].value;
+    let lnval = document.forms["contactform"]["ln"].value;
+    let emailval = document.forms["contactform"]["email"].value;
+    let msgval = document.forms["contactform"]["msg"].value;
+    if (fnval == "" || lnval == "") {
+        alert("Please add your name!");
+        return false;
+    }
+    if (emailval == "") {
+        alert("Please add your email!");
+        return false;
+    }
+    if (msgval == "") {
+        alert("Please add your message!");
+        return false;
+    }  
+    return true;
+}
+
+if (validate()) {
+    alert("Form sent: " + fnval + ", " + lnval + ", " + emailval + ", " + msgval)
+}

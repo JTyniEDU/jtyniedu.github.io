@@ -131,7 +131,7 @@
             <h3>My Contacts</h2>
             <p>Email: <strong>joona.tyni@edu.salpaus.fi</strong></p>
             <hr class="seperator">
-            <form>
+            <form name="contactform">
                 <h3>Contact Form</h3>
                 <div class="wrapper-1">
                 <div class="wrapper-2">
@@ -142,12 +142,12 @@
                 <input type="text" id="ln" name="ln" value=""></div>
                 <div class="wrapper-2">
                 <label for="email">Your Email</label>
-                <input type="text" id="email" name="email" value="">
+                <input type="email" id="email" name="email" value="">
                 </div>
                 </div><br>
                 <label for="msg">Your Message</label>
                 <textarea type="text" id="msg" name="msg" value=""></textarea><br>
-                <input id="submitbtn" type="submit" value="Submit">
+                <input onsubmit="validate()" id="submitbtn" type="submit" value="Submit">
             </form>
             <br>
             <div class="centered"><a href="/extras/cv-jt.docx"><button class="btn">Download CV</button></a><p class="infotxt"> ・ Portfolio website using only HTML, CSS and Javascript.</p></div>
