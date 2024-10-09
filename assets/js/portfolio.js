@@ -1,32 +1,3 @@
-function dataHome() {
-    document.getElementById("data-1").style.display = "unset";
-    document.getElementById("data-2").style.display = "none";
-    document.getElementById("data-3").style.display = "none";
-    document.getElementById("data-4").style.display = "none";
-}
-
-function dataAbout() {
-    document.getElementById("data-2").style.display = "unset";
-    document.getElementById("data-1").style.display = "none";
-    document.getElementById("data-3").style.display = "none";
-    document.getElementById("data-4").style.display = "none";
-}
-
-function dataSkills() {
-    document.getElementById("data-3").style.display = "unset";
-    document.getElementById("data-1").style.display = "none";
-    document.getElementById("data-2").style.display = "none";
-    document.getElementById("data-4").style.display = "none";
-}
-
-function dataContact() {
-    document.getElementById("data-4").style.display = "unset";
-    document.getElementById("data-1").style.display = "none";
-    document.getElementById("data-2").style.display = "none";
-    document.getElementById("data-3").style.display = "none";
-}
-
-
 document.addEventListener("DOMContentLoaded", () => {
     const gif = document.getElementById("chi");
 
@@ -77,3 +48,30 @@ icons.forEach(icon => {
     });
 });
 
+function dataHome() {
+    document.getElementById("data-1").style.display = "unset";
+    document.getElementById("data-2").style.display = "none";
+    document.getElementById("data-3").style.display = "none";
+    document.getElementById("data-4").style.display = "none";
+}
+
+function dataAbout() {
+    document.getElementById("data-2").style.display = "unset";
+    document.getElementById("data-1").style.display = "none";
+    document.getElementById("data-3").style.display = "none";
+    document.getElementById("data-4").style.display = "none";
+}
+
+function dataSkills() {
+    document.getElementById("data-3").style.display = "unset";
+    document.getElementById("data-1").style.display = "none";
+    document.getElementById("data-2").style.display = "none";
+    document.getElementById("data-4").style.display = "none";
+}
+
+function dataContact() {
+    document.getElementById("data-4").style.display = "unset";
+    document.getElementById("data-1").style.display = "none";
+    document.getElementById("data-2").style.display = "none";
+    document.getElementById("data-3").style.display = "none";
+}
