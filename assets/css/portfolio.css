@@ -164,11 +164,15 @@ progress::-webkit-progress-value {
     padding-bottom: 3px; 
 }
 
-input {
+input, textarea {
     border-radius: 25px;
     border: none;
     background: #01E9FA;
-    }
+}
+
+input:active, textarea:active {
+    border: none;
+}
 
 #submitbtn {
     width: 120px;
