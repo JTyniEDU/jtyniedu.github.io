@@ -50,20 +50,20 @@ icons.forEach(icon => {
 
 function dataHome () {
     document.getElementById("data-1").style.display = "unset";
-    document.getElementById("data-2", "data-3", "data-4").style.display = "none";
+    document.querySelectorAll('#data-2, #data-3, #data-4').style.display = "none";
 }
 
 function dataAbout () {
     document.getElementById("data-2").style.display = "unset";
-    document.getElementById("data-1", "data-3", "data-4").style.display = "none";
+    document.querySelectorAll('#data-1, #data-3, #data-4').style.display = "none";
 }
 
 function dataSkills () {
     document.getElementById("data-3").style.display = "unset";
-    document.getElementById("data-1", "data-2", "data-4").style.display = "none";
+    document.querySelectorAll('#data-2, #data-1, #data-4').style.display = "none";
 }
 
 function dataContact () {
     document.getElementById("data-4").style.display = "unset";
-    document.getElementById("data-1", "data-2", "data-3").style.display = "none";
+    document.querySelectorAll('#data-2, #data-3, #data-1').style.display = "none";
 }
