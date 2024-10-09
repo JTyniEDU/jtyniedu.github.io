@@ -37,16 +37,16 @@ document.addEventListener("DOMContentLoaded", () => {
 const icons = document.querySelectorAll('.icons');
 const progressBar = document.getElementById('progress-bar');
 
-icons.forEach(icon => {
-    icon.addEventListener('mouseover', function () {
-        const progressValue = this.getAttribute('data-progress');
-        progressBar.value = progressValue;
-    });
+// icons.forEach(icon => {
+//     icon.addEventListener('mouseover', function () {
+//         const progressValue = this.getAttribute('data-progress');
+//         progressBar.value = progressValue;
+//     });
 
-    icon.addEventListener('mouseout', function () {
-        progressBar.value = 0;
-    });
-});
+//     icon.addEventListener('mouseout', function () {
+//         progressBar.value = 0;
+//     });
+// });
 
 function dataHome() {
     document.getElementById("data-1").style.display = "unset";
