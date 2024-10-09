@@ -185,3 +185,11 @@ input:active, textarea:active {
     font-family: 'Poppins';
     font-style: normal;
 }
+
+form {
+    background: #2b3650;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
