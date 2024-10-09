@@ -186,6 +186,11 @@ textarea:focus, input:focus{
     font-style: normal;
 }
 
+textarea {
+    min-width: 300px;
+    min-height: 100px;
+}
+
 form {
     background: #2b3650;
     padding: 15px;
