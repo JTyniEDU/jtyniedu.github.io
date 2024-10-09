@@ -49,21 +49,21 @@ icons.forEach(icon => {
 });
 
 function dataHome () {
-    document.getElementById("data-1").style.display = "inherit";
+    document.getElementById("data-1").style.display = "unset";
     document.getElementById("data-2", "data-3", "data-4").style.display = "none !important";
 }
 
 function dataAbout () {
-    document.getElementById("data-2").style.display = "inherit";
+    document.getElementById("data-2").style.display = "unset";
     document.getElementById("data-1", "data-3", "data-4").style.display = "none !important";
 }
 
 function dataSkills () {
-    document.getElementById("data-3").style.display = "inherit";
+    document.getElementById("data-3").style.display = "unset";
     document.getElementById("data-1", "data-2", "data-4").style.display = "none !important";
 }
 
 function dataContact () {
-    document.getElementById("data-4").style.display = "inherit";
+    document.getElementById("data-4").style.display = "unset";
     document.getElementById("data-1", "data-2", "data-3").style.display = "none !important";
 }
