@@ -81,7 +81,11 @@ function validate() {
     let lnval = document.forms["contactform"]["ln"].value;
     let emailval = document.forms["contactform"]["email"].value;
     let msgval = document.forms["contactform"]["msg"].value;
-    if (fnval == "" || lnval == "") {
+    if (fnval == "") {
+        alert("Please add your name!");
+        return false;
+    }
+    if (lnval == "") {
         alert("Please add your name!");
         return false;
     }
