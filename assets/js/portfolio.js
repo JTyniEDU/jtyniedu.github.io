@@ -81,12 +81,13 @@ function validate() {
     let lnval = document.forms["contactform"]["ln"].value;
     let emailval = document.forms["contactform"]["email"].value;
     let msgval = document.forms["contactform"]["msg"].value;
+
     if (fnval == "") {
-        alert("Please add your name!");
+        alert("Please add your first name!");
         return false;
     }
     if (lnval == "") {
-        alert("Please add your name!");
+        alert("Please add your last name!");
         return false;
     }
     if (emailval == "") {
@@ -96,10 +97,8 @@ function validate() {
     if (msgval == "") {
         alert("Please add your message!");
         return false;
-    }  
-    return true;
-}
+    }
 
-if (validate()) {
-    alert("Form sent: " + fnval + ", " + lnval + ", " + emailval + ", " + msgval)
+    alert("Form sent: " + fnval + ", " + lnval + ", " + emailval + ", " + msgval);
+    return true; // Allow form submission
 }
