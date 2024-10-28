@@ -51,4 +51,4 @@ function changeTitle() {
 }
 
 // Change title every 200 milliseconds (adjust as needed)
-setInterval(changeTitle, 200);
+setInterval(changeTitle, 400);
