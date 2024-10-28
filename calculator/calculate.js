@@ -11,7 +11,10 @@ document.getElementById("investment-form").addEventListener("submit", function(e
     // Parse input values
     var monthlyInvestment = parseFloat(amountField.value) || 0;
     var months = parseInt(timeField.value) || 0;
-    var monthlyReturn = parseFloat(multiplierField.value) / 100 || 0;
+    var yearlyReturn = parseFloat(multiplierField.value) / 100 || 0;
+
+    // Convert yearly return to monthly return
+    var monthlyReturn = yearlyReturn / 12;
 
     // Calculate compound interest
     var total = 0;
