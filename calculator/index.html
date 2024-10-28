@@ -14,14 +14,22 @@
     <script src="chart.js"></script>
 </head>
 <body>
-    <div class="bg-white dark:bg-black min-h-screen text-black dark:text-white">
+    <div class="bg-white dark:bg-black min-h-screen text-black dark:text-white text-sans">
         <header class="top-0 relative p-5">
-            <h1>Compound Interest Calculator</h1>
+            <h1><strong>Compound Interest Calculator</strong></h1>
         </header>
         <main class="min-h-screen">
-            <div class="chart" style="height:184px">
-                <canvas id="myChart"></canvas>
-              </div>
+            <section>
+                <h4>Calculate how much you can earn with the compound interest effect on index funds.</h4>
+            <hr/>
+              <form>
+                <label for="amount">Monthly Investment:</label>
+                <input type="text" id="amount" name="amount"><br>
+                <label for="time">Time Invested (in months):</label>
+                <input type="text" id="time" name="time"><br>
+                <input type="submit" value="Submit">
+              </form>  
+            </section>
         </main>
         <footer class="bottom-0 relative p-5">
             <span>Made by J. Tyni</span>
