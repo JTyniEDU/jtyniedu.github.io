@@ -1,6 +1,10 @@
 :root, body {
     min-height: 100%;
     min-width: 100%;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 main {
@@ -15,4 +19,5 @@ main {
     background-color: transparent;
     border: 1px solid black;
     border-radius: 10px;
+    padding: 5px;
 }
