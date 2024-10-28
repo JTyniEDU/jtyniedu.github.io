@@ -1,4 +1,4 @@
-var body = document.querySelector("body"),
+var body = document.querySelector("body");
 
 function changetheme() {
     if (body.className === "") {
@@ -6,4 +6,5 @@ function changetheme() {
     } else {
         body.classList.remove("dark")
     }
-}
+};
+
