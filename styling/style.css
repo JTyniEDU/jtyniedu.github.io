@@ -7,6 +7,12 @@
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    transition: all .3s;
+}
+
+.dark {
+    background-color: black;
+    color: white;
 }
 
 main {
