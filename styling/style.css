@@ -1,6 +1,5 @@
-:root, body {
+:root, body, main {
     min-height: 100%;
-    min-width: 100%;
 }
 
 * {
