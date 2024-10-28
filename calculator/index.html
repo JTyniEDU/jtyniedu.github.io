@@ -10,8 +10,6 @@
     <link rel="manifest" href="/assets/favicon/site.webmanifest">
     <link rel="icon" type="image/x-icon" href="/assets/favicon/favicon.ico">
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.5/dist/chart.umd.min.js"></script>
-    <script src="chart.js"></script>
 </head>
 <body>
     <div class="bg-white dark:bg-black min-h-screen text-black dark:text-white text-sans antialiased">
@@ -21,26 +19,26 @@
         <main class="min-h-screen p-8">
             <section>
                 <h4 class="text-lg">Calculate how much you can earn with the compound interest effect on index funds.</h4>
-            <br>
-              <form>
-                <label class="m-1" for="amount">Monthly Investment:</label>
-                <input class="m-1 bg-transparent rounded border-solid border-2 border-black dark:border-white max-w-28" type="text" id="amount" name="amount"><span class="text-lg">€</span><br>
-                <label class="m-1" for="time">Time Invested (in months):</label>
-                <input class="m-1 bg-transparent rounded border-solid border-2 border-black dark:border-white max-w-28" type="text" id="time" name="time"><span class="text-lg">Months</span><br>
-                <label class="m-1" for="multiplier">Monthly Return (%):</label>
-                <input class="m-1 bg-transparent rounded border-solid border-2 border-black dark:border-white max-w-28" type="text" id="multiplier" name="multiplier"><span class="text-lg">%</span><br>
-                <input class="m-1 bg-black dark:bg-white text-white dark:text-black rounded p-2" type="submit" value="Submit">
-              </form>  
-              <br>
-              <div class="resultwrapper text-lg flex">
-              <p>Total Earnings: </p><span id="result">x</span><p>€</p>
-            </div>
+                <br>
+                <form id="investment-form">
+                    <label class="m-1" for="amount">Monthly Investment:</label>
+                    <input class="m-1 bg-transparent rounded border-solid border-2 border-black dark:border-white max-w-28" type="text" id="amount" name="amount"><span class="text-lg">€</span><br>
+                    <label class="m-1" for="time">Time Invested (in months):</label>
+                    <input class="m-1 bg-transparent rounded border-solid border-2 border-black dark:border-white max-w-28" type="text" id="time" name="time"><span class="text-lg">Months</span><br>
+                    <label class="m-1" for="multiplier">Monthly Return (%):</label>
+                    <input class="m-1 bg-transparent rounded border-solid border-2 border-black dark:border-white max-w-28" type="text" id="multiplier" name="multiplier"><span class="text-lg">%</span><br>
+                    <input class="m-1 bg-black dark:bg-white text-white dark:text-black rounded p-2" type="submit" value="Submit">
+                </form>  
+                <br>
+                <div class="resultwrapper text-lg flex">
+                    <p>Total Earnings: </p><span id="result">x</span><p>€</p>
+                </div>
             </section>
         </main>
         <footer class="bottom-0 relative p-5">
             <span>Made by J. Tyni</span>
         </footer>
     </div>
-    
+    <script src="calculate.js"></script>
 </body>
 </html>
