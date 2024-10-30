@@ -8,15 +8,26 @@
     -moz-user-select: none;
 }
 
-.chi {
+.chi1 {
     transition: 6s;
-    animation: chi 6s infinite;
+    animation: chi1 6s infinite;
 }
 
-@keyframes chi {
+.chi2 {
+    transition: 6s;
+    animation: chi2 6s infinite;
+}
+
+@keyframes chi1 {
     0% {transform:translateY(100px);}
     50% {transform:translateY(-100px);}
     100% {transform: translateY(100px);}
+}
+
+@keyframes chi2 {
+    0% {transform:translateY(-100px);}
+    50% {transform:translateY(100px);}
+    100% {transform: translateY(-100px);}
 }
 
 .title:hover {
