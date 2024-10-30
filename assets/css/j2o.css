@@ -30,6 +30,12 @@
     100% {transform: translateY(-100px);}
 }
 
+@media only screen and (max-width: 400px) {
+    .chi1, .chi2 {
+        display: none;
+    }
+}
+
 .title:hover {
     transform: rotate3d(0, 1, 0, 360deg);
     transition: 1s;
