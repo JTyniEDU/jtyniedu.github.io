@@ -2,6 +2,17 @@
     transition: .3s;
 }
 
+:root {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+
+.title:hover {
+    transform: rotate3d(0, 1, 0, 360deg);
+    transition: 1s;
+}
+
 button:hover {
     transform: scale(1.1);
 } 
