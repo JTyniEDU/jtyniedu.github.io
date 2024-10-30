@@ -30,7 +30,7 @@
     100% {transform: translateY(-100px);}
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 800px) {
     .chi1, .chi2 {
         display: none;
     }
