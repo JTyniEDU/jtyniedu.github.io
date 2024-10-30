@@ -8,6 +8,16 @@
     -moz-user-select: none;
 }
 
+.chi {
+    transition: 6s;
+    animation: chi 6s infinite;
+}
+
+@keyframes chi {
+    0% {transform:translateY(100px);}
+    100% {transform: translateY(-100px);}
+}
+
 .title:hover {
     transform: rotate3d(0, 1, 0, 360deg);
     transition: 1s;
